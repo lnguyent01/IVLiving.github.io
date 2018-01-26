@@ -1,0 +1,13 @@
+h3 {
+  text-align: center;
+}
+
+ol {
+  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 550px;
+}
+
+.list {
+  vertical-align: top;
+}

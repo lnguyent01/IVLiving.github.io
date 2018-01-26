@@ -1,0 +1,24 @@
+<template name="listingsBar">
+  <h3> Listings </h3>
+  <button class="addBtn">Add to my listings</button>
+    <ol>
+      {{#each listings}}
+        {{> listing}}
+      {{/each}}
+    </ol>
+</template>
+
+<template name="listing">
+  <label>
+    <form id="listing">
+      <input type="checkbox" value={{this}}>
+        <p class='list'>
+          Company: {{company}} <br>
+          Persons: {{persons}} <br>
+          Rent: {{rent}} <br>
+          Home Type: {{type}} <br>
+          Street: {{street}} <br>
+        </p>
+    </form>
+  </label>
+</template>

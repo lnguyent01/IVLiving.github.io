@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+.links {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.links a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropDown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropDown .dropDownBtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.links a:hover, .dropDown:hover .dropDownBtn {
+    background-color: #ddd;
+}
+
+.dropDownList {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 14px;
+    max-height: 195px;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+.dropDownList a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropDownList a:hover {
+    background-color: #ddd;
+}
+
+.dropDown:hover .dropDownList {
+    display: block;
+}
+
+.dropDownList button {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f9f9f9;
+    width: 160px;
+}
+
+.dropDownList button:hover {
+  background-color: #ddd;
+}
